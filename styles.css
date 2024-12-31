@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #05102f;
+    color: #cbc7b7;
+    font-family: 'Andale Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px 0;
+    position: fixed; /* Fixe le header */
+    top: 0; /* Place-le en haut */
+    width: 100%; /* S'étend sur toute la largeur de la page */
+    z-index: 1000; /* Assure qu'il est toujours au-dessus des autres éléments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour le démarquer */
+}
+#projects {
+    scroll-margin-top: 120px; /* Ajuste en fonction de la hauteur exacte de votre header */
+}
+
+/* Logo */
+.logo-container {
+    position: absolute;
+    top: 10px; /* Distance from the top of the header */
+    left: 20px; /* Distance from the left of the header */
+}
+
+/* Navigation Links */
+.nav-links {
+    position: absolute;
+    top: 20px; /* Align with logo */
+    right: 20px;
+    display: flex;
+    gap: 15px; /* Space between links */
+}
+
+.nav-links a {
+    color: #cbc7b7;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Change color on hover */
+}
+
+/* Sections */
+section {
+    padding: 80px 20px; /* Laisse un espace suffisant pour le header */
+    scroll-margin-top: 100px; /* Garantit que la section est visible lors de la navigation */
+}
+
+.about-section {
+    background-color: #f4f4f4; /* Couleur de fond claire */
+    padding: 50px 20px; /* Espacement interne */
+    text-align: center;
+    margin-top: 100px; /* Ajoute un espace après le header */
+}
+
+.about-section h2 {
+    font-size: 2rem; /* Taille du titre */
+    color: #05102f; /* Couleur assortie au header */
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem; /* Taille du texte */
+    color: #333; /* Couleur du texte */
+    line-height: 1.6; /* Espacement entre les lignes */
+    max-width: 800px; /* Largeur maximale du texte */
+    margin: 0 auto 20px auto; /* Centrage du texte */
+}
+
+
+/* Projects Section */
+main {
+    padding: 20px;
+    margin: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33% - 20px); /* Ensures consistent sizing */
+}
+
+.project img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover;
+}
+
+.project p {
+    padding: 15px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+/* Link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer */
+footer {
+    background-color: #05102f;
+    color: #cbc7b7;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        width: calc(50% - 20px); /* Adjust width for tablets */
+    }
+
+    .nav-links {
+        gap: 10px; /* Reduce space between links */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: calc(100% - 20px); /* Adjust width for small screens */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 5px;
+    }
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between icons */
+}
+
+.contact-icon {
+    font-size: 2rem; /* Adjust size of the icons */
+    color: #cbc7b7; /* Match color to your design */
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-icon:hover {
+    color: #ffffff; /* Color on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
