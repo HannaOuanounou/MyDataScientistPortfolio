@@ -9,6 +9,7 @@ fetch('projects.json')
                 <a href="${project.url}" target="_blank">
                     <img src="${project.image}" alt="${project.title}">
                     <p>${project.title}</p>
+                    <small>${project.description}</small>
                 </a>`;
             projectContainer.appendChild(projectDiv);
         });
