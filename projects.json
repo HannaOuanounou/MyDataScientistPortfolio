@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Advanced NLP-CV Image Editing System",
+        "url": "https://github.com/HannaOuanounou/ImageEditorProject",
+        "image": "images/nlp_cv_system.jpg",
+        "description": "An advanced system combining NLP and CV for automated image editing."
+    },
+    {
+        "title": "Hebrew Cursive Handwriting Recognition",
+        "url": "hebrew-handwriting-recognition.html",
+        "image": "images/hebrew_recognition.jpg",
+        "description": "A deep learning model for recognizing Hebrew cursive handwriting."
+    },
+    {
+        "title": "Vehicle Theft Detection using AI",
+        "url": "vehicle-theft-detection.html",
+        "image": "images/vehicle_theft_detection.jpg",
+        "description": "An AI-powered system for detecting stolen vehicles."
+    },
+    {
+        "title": "Predictive Analytics for Stock Performance",
+        "url": "analytics-stock-perf.html",
+        "image": "images/analytics-stock-perf.jpg",
+        "description": "A predictive model to analyze stock performance and trends."
+    },
+    {
+        "title": "Automated Investment Strategies",
+        "url": "automated-investment-strategie.html",
+        "image": "images/automated-investment-strategie.jpg",
+        "description": "Backtested strategies for automated investment decisions."
+    },
+    {
+        "title": "Stock Evaluation",
+        "url": "stock_evaluation.html",
+        "image": "images/data-integration-analysis.jpg",
+        "description": "A system for evaluating whether stocks are overvalued or undervalued."
+    },
+    {
+        "title": "Bias Analysis and Explainability on Tweets and Articles",
+        "url": "biais-explainability-analysis.html",
+        "image": "images/biais-explainability-analysis.jpg",
+        "description": "A bias analysis on tweets and articles related to the October 7 War."
+    },
+    {
+        "title": "Automated Data Cleaning with ML",
+        "url": "automated-data-cleaning.html",
+        "image": "images/automated_data_cleaning.jpg",
+        "description": "A machine learning solution for automating data cleaning processes."
+    }
+]
