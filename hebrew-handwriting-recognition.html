@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebrew Cursive Letters Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#top" class="logo-link">
+                <h1>Hanna Fettaya</h1>
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#models">Models</a>
+            <a href="#results">Results</a>
+            <a href="#resources">Resources</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about" class="about-section">
+            <h2>About the Project</h2>
+            <p>
+                This project focuses on recognizing Hebrew cursive letters using deep learning models and transfer learning techniques. It includes:
+            </p>
+            <ul>
+                <li>Classification of 27 Hebrew cursive letters.</li>
+                <li>A dataset of 5,073 images.</li>
+                <li>Comparison between traditional CNN models and pre-trained models such as ResNet50 and VGG16.</li>
+            </ul>
+        </section>
+
+        <section id="models" class="project-detail">
+            <h2>Models and Techniques</h2>
+            <p>We utilized two main approaches for classification:</p>
+            <h3>CNN (Convolutional Neural Network)</h3>
+            <ul>
+                <li>Implemented regularization techniques (L1, L2).</li>
+                <li>Applied dropout layers and data augmentation to prevent overfitting.</li>
+                <li>Achieved an accuracy of 67% using early stopping and augmentation.</li>
+            </ul>
+            <h3>Transfer Learning</h3>
+            <p>Pre-trained models were fine-tuned to improve performance:</p>
+            <ul>
+                <li><strong>ResNet50:</strong> Achieved 80% accuracy with fine-tuning (learning rate: 0.001, optimizer: Adam).</li>
+                <li><strong>VGG16:</strong> Achieved 82% accuracy with fine-tuning.</li>
+            </ul>
+        </section>
+
+        <section id="results" class="project-detail">
+            <h2>Results</h2>
+            <p>The best-performing model was VGG16 with fine-tuning, achieving an accuracy of 82%. Other observations include:</p>
+            <ul>
+                <li>Transfer learning outperformed traditional CNN models.</li>
+                <li>Fine-tuning pre-trained models significantly improved accuracy.</li>
+            </ul>
+        </section>
+
+        <section id="resources" class="project-detail">
+            <h2>Resources:</h2>
+            <ul>
+                <li><a href="https://github.com/HannaOuanounou/hebrew-recognition" target="_blank">GitHub Repository</a></li>
+                <li><a href="https://colab.research.google.com/drive/link" target="_blank">Colab Notebook</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Hanna Fettaya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
