@@ -15,7 +15,7 @@
         </div>
         <nav class="nav-links">
             <a href="#about">About</a>
-            <a href="#models">Models</a>
+            <a href="#workflow">Workflow</a>
             <a href="#results">Results</a>
             <a href="#resources">Resources</a>
         </nav>
@@ -25,45 +25,57 @@
         <section id="about" class="about-section">
             <h2>About the Project</h2>
             <p>
-                This project focuses on recognizing Hebrew cursive letters using deep learning models and transfer learning techniques. It includes:
+                This project aims to classify handwritten Hebrew cursive letters using deep learning models, specifically comparing a traditional Convolutional Neural Network (CNN) with transfer learning approaches. The dataset includes 5,073 labeled images representing 27 distinct Hebrew letters.
             </p>
             <ul>
-                <li>Classification of 27 Hebrew cursive letters.</li>
-                <li>Comparison between traditional CNN models and pre-trained models such as ResNet50 and VGG16.</li>
+                <li>Baseline CNN model built from scratch with regularization techniques.</li>
+                <li>Transfer learning with pre-trained models: ResNet50 and VGG16.</li>
             </ul>
         </section>
 
-        <section id="models" class="project-detail">
-            <h2>Models and Techniques</h2>
-            <p>We utilized two main approaches for classification:</p>
-            <h3>CNN (Convolutional Neural Network)</h3>
+        <section id="workflow" class="project-detail">
+            <h2>Workflow and Techniques</h2>
+
+            <h3>1. Data Preprocessing</h3>
+            <p>
+                Images were resized and normalized. Labels were one-hot encoded and the dataset was split into training, validation, and test sets. Data augmentation was used to expand the dataset and reduce overfitting.
+            </p>
+
+            <h3>2. CNN Model (from scratch)</h3>
             <ul>
-                <li>Implemented regularization techniques (L1, L2).</li>
-                <li>Applied dropout layers and data augmentation to prevent overfitting.</li>
-                <li>Achieved an accuracy of 67% using early stopping and augmentation.</li>
+                <li>Implemented regularization (L1/L2), dropout, and early stopping.</li>
+                <li>Used data augmentation with horizontal/vertical flips and zoom.</li>
+                <li>Model achieved 67% accuracy.</li>
             </ul>
-            <h3>Transfer Learning</h3>
-            <p>Pre-trained models were fine-tuned to improve performance:</p>
+
+            <h3>3. Transfer Learning</h3>
+            <p>
+                Pre-trained models (ResNet50, VGG16) were fine-tuned for the classification task:
+            </p>
             <ul>
-                <li><strong>ResNet50:</strong> Achieved 80% accuracy with fine-tuning (learning rate: 0.001, optimizer: Adam).</li>
-                <li><strong>VGG16:</strong> Achieved 82% accuracy with fine-tuning.</li>
+                <li><strong>ResNet50:</strong> Fine-tuned using learning rate 0.001 and Adam optimizer — accuracy reached 80%.</li>
+                <li><strong>VGG16:</strong> Achieved best performance with 82% accuracy using similar hyperparameters.</li>
             </ul>
         </section>
 
         <section id="results" class="project-detail">
-            <h2>Results</h2>
-            <p>The best-performing model was VGG16 with fine-tuning, achieving an accuracy of 82%. Other observations include:</p>
+            <h2>Results and Insights</h2>
+            <p>
+                Transfer learning models significantly outperformed the traditional CNN:
+            </p>
             <ul>
-                <li>Transfer learning outperformed traditional CNN models.</li>
-                <li>Fine-tuning pre-trained models significantly improved accuracy.</li>
+                <li><strong>VGG16</strong> achieved the highest accuracy: 82%.</li>
+                <li>Fine-tuning deeper layers improved generalization.</li>
+                <li>Some letters were visually similar and frequently misclassified.</li>
             </ul>
+            <p>Future improvements could include testing other architectures (EfficientNet, Inception), using larger datasets, or hyperparameter optimization.</p>
         </section>
 
         <section id="resources" class="project-detail">
-            <h2>Resources:</h2>
+            <h2>Resources</h2>
             <ul>
                 <li><a href="https://github.com/HannaOuanounou/Recognition-of-Handwritten-Hebrew-letters-with-Transfer-Learning" target="_blank">GitHub Repository</a></li>
-                <li><a href="https://colab.research.google.com/github/HannaOuanounou/Recognition-of-Handwritten-Hebrew-letters-with-Transfer-Learning/blob/main/Recognition_of_Handwritten_Hebrew_letters_with_Transfer_Learning.ipynbhttps://colab.research.google.com/github/HannaOuanounou/Recognition-of-Handwritten-Hebrew-letters-with-Transfer-Learning/blob/main/Recognition_of_Handwritten_Hebrew_letters_with_Transfer_Learning.ipynb" target="_blank">Colab Notebook</a></li>
+                <li><a href="https://colab.research.google.com/github/HannaOuanounou/Recognition-of-Handwritten-Hebrew-letters-with-Transfer-Learning/blob/main/Recognition_of_Handwritten_Hebrew_letters_with_Transfer_Learning.ipynb" target="_blank">Open in Google Colab</a></li>
             </ul>
         </section>
     </main>
